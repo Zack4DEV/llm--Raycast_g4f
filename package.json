@@ -1,0 +1,270 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "raycast-g4f",
+  "version": "5.2",
+  "title": "GPT4Free",
+  "description": "Use GPT, Claude, Llama, and more... all for FREE! + Full support for custom APIs.",
+  "icon": "gpt-icon.png",
+  "author": "muzhen_gaming",
+  "type": "module",
+  "imports": {
+    "#root/*": "./*"
+  },
+  "categories": [
+    "Productivity",
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "askAI",
+      "title": "Ask AI",
+      "description": "Ask GPT a question",
+      "icon": "gpt-icon.png",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "query",
+          "placeholder": "Query",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aiChat",
+      "title": "AI Chat",
+      "description": "Chat with GPT",
+      "icon": "chat-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "askAboutSelectedText",
+      "title": "Ask About Selected Text",
+      "description": "Ask GPT about selected text",
+      "icon": "clipboard-icon.png",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "query",
+          "placeholder": "Query",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "askAboutScreenContent",
+      "title": "Ask About Screen Content",
+      "description": "Ask GPT about screen content",
+      "icon": "screen-icon.png",
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "query",
+          "placeholder": "Query",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "askAboutBrowserTab",
+      "title": "Ask About Browser Tab",
+      "description": "Ask GPT about browser tab",
+      "icon": "screen-icon.png",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "query",
+          "placeholder": "Query",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "disabledByDefault": true
+    },
+    {
+      "name": "continue",
+      "title": "Continue Text",
+      "description": "Generate completion of text",
+      "icon": "text-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "summarize",
+      "title": "Summarize",
+      "description": "Summarize text",
+      "icon": "summarize-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "explain",
+      "title": "Explain",
+      "description": "Explain text",
+      "icon": "explain-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "fixCode",
+      "title": "Fix Code",
+      "description": "Fix errors and bugs in code",
+      "icon": "code-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "format",
+      "title": "Format Text",
+      "description": "Fix formatting of text",
+      "icon": "grammar-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "friendly",
+      "title": "Change Tone to Friendly",
+      "description": "Change tone of text to friendly",
+      "icon": "text-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "professional",
+      "title": "Change Tone to Professional",
+      "description": "Change tone of text to professional",
+      "icon": "text-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "paraphrase",
+      "title": "Paraphrase",
+      "description": "Paraphrase text",
+      "icon": "text-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "synonyms",
+      "title": "Find Synonyms",
+      "description": "Find synonyms of word/phrase",
+      "icon": "synonym-icon.png",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "query",
+          "type": "text",
+          "placeholder": "word/phrase",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "translate",
+      "title": "Translate",
+      "description": "Translate text to another language",
+      "icon": "translate-icon.png",
+      "mode": "view",
+      "preferences": [
+        {
+          "name": "translateUseDefaultLanguage",
+          "label": "Always Use Default Language",
+          "description": "Always translate to the default language, skipping the language selection form.",
+          "required": false,
+          "type": "checkbox",
+          "default": false
+        }
+      ]
+    },
+    {
+      "name": "improve",
+      "title": "Improve Writing",
+      "description": "Improve writing of text",
+      "icon": "grammar-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "longer",
+      "title": "Make Longer",
+      "description": "Make text longer",
+      "icon": "longer-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "shorter",
+      "title": "Make Shorter",
+      "description": "Make text shorter",
+      "icon": "shorten-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "genImage",
+      "title": "Generate Images",
+      "description": "Generate images from a text prompt",
+      "icon": "image-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "customAICommands",
+      "title": "Custom AI Commands",
+      "description": "Run and manage custom AI commands",
+      "icon": "command-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "preferences",
+      "title": "Preferences",
+      "description": "Manage extension preferences",
+      "icon": "box-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "checkForUpdates",
+      "title": "Check for Updates",
+      "description": "Check for extension updates from the official GitHub source",
+      "icon": "update-icon.png",
+      "mode": "view"
+    },
+    {
+      "name": "devPanel",
+      "title": "Developer Panel",
+      "description": "Developer panel for debugging and testing",
+      "icon": "box-icon.png",
+      "mode": "view",
+      "disabledByDefault": true
+    }
+  ],
+  "preferences": [
+    {
+      "name": "__README",
+      "label": "README",
+      "description": "To change all extension preferences, please launch the Preferences command. They cannot be changed from Raycast preferences.",
+      "required": true,
+      "type": "checkbox"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.88.4",
+    "fetch-to-curl": "^0.6.0",
+    "g4f-image": "^1.3.3",
+    "gemini-ai-sdk": "^1.0.1",
+    "http-proxy-agent": "^7.0.2",
+    "lodash.throttle": "^4.1.1",
+    "node-fetch": "^3.3.2",
+    "undici": "^7.1.1",
+    "untruncate-json": "^0.0.1"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "1.0.5",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.3",
+    "eslint": "^7.32.0",
+    "prettier": "^2.8.8",
+    "puppeteer-core": "^23.7.0",
+    "react": "^18.3.1",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix --relaxed",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
