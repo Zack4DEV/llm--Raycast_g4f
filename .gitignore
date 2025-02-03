@@ -1,17 +1,26 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+__pycache__/
+.venv/
+venv/
+.vscode/
+.idea/
+htmlcov/
+dist/
 /node_modules
-
-# Raycast specific files
+.idea
+.vscodeworkspace/
 raycast-env.d.ts
-
-# misc
-.DS_Store
-
+raycast-env/
 .raycast-swift-build
 .swiftpm
 compiled_raycast_swift
+venv/
 
-.idea
-.vscode
+.coverage
+*.code-workspace
+.*_cache
+.env
+*.pyc
+*.db
+poetry.lock
+.DS_Store
+*.log
