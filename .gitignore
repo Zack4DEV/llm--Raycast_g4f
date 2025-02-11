@@ -13,7 +13,7 @@ raycast-env/
 .raycast-swift-build
 .swiftpm
 compiled_raycast_swift
-venv/
+.*venv | venv
 
 .coverage
 *.code-workspace
